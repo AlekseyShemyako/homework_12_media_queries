@@ -51,12 +51,18 @@ li {
 	display: flex;
 	justify-content: flex-start;
 }
-
+.button__learn-more {
+	display: none;
+}
+.title__top__team:nth-of-type(2),
+.title__top__text:nth-of-type(2) {
+	display: none;
+}
 @media screen and (min-width: 960px) {
 	.header {
 		background-image: none;
 	}
-	.button--select:nth-child(2n) {
+	.header__sub__bullet .button--select:nth-of-type(2n) {
 		display: none;
 	}
 	.button__duwn {
@@ -84,6 +90,10 @@ li {
 	.title__top__team:first-of-type {
 		display: none;
 	}
+	.title__top__team:nth-of-type(2),
+	.title__top__text:nth-of-type(2) {
+		display: block;
+	}
 	.title__top__team:nth-of-type(2) {
 		font-size: 60px;
 		line-height: 16px;
@@ -99,6 +109,7 @@ li {
 		letter-spacing: 0.51px;
 	}
 	.button__learn-more {
+		display: block;
 		font-family: 'Varela Round', sans-serif;
 		box-sizing: border-box;
 		padding: 17px 40px;
@@ -336,7 +347,7 @@ li {
 .title_responsive {
 	font-family: 'Varela Round', sans-serif;
 	box-sizing: border-box;
-	padding: 29px 62px;
+	padding: 29px 50px;
 	text-align: center;
 	line-height: center;
 	background-color: #3db39e;
