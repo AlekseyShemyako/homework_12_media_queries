@@ -34,6 +34,9 @@ li {
 	background-size: cover;
 	text-align: center;
 }
+.header__image {
+	display: none;
+}
 .header__sub {
 	margin-bottom: 84px;
 	display: flex;
@@ -64,6 +67,9 @@ li {
 	}
 	.header {
 		text-align: start;
+	}
+	.header__image {
+		display: block;
 	}
 	.header__section {
 		margin: 0 auto;
